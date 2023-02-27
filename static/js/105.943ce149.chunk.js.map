@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/105.943ce149.chunk.js","mappings":"2JAOA,UAPiB,WAChB,OACG,+BACA,oDAGH,C","sources":["components/HomePage/HomePage.jsx"],"sourcesContent":["const HomePage = () => {\n return(\n    <>\n    <h2>Please login or singup</h2>\n    </>\n )\n}\nexport default HomePage;\n"],"names":[],"sourceRoot":""}

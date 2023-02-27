@@ -12,8 +12,7 @@ export const DIV = styled.div`
     width: 30%;
     border-radius: 4px;
     padding: 16px;
-    /* box-shadow: 0px 1px 12px 0px rgba(0,0,0,0.75); */
-        box-shadow: rgb(2 117 11 / 75%) 0px 0px 12px 0px;
+        box-shadow: rgb(9 9 9 / 75%) 0px 0px 12px 0px;
 `
 export const SPAN = styled.span`
 display: flex;

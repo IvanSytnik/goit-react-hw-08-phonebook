@@ -11,7 +11,6 @@ export const DIV = styled.div`
     width: 30%;
     border-radius: 4px;
     padding: 16px;
-    /* box-shadow: 0px 1px 12px 0px rgba(0,0,0,0.75); */
  
 `
 export const FORM = styled.form`

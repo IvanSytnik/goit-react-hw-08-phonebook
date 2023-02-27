@@ -1,12 +1,16 @@
 // import css from './SubmitContacts.module.css'
 // import PropTypes from 'prop-types';
+import TextField from '@mui/material/TextField';
+import Button  from '@mui/material/Button';
 
 
 
 const SubmitContacts = ({name, number, handleSubmit, handleName, handleNumber}) => {
 return(
+  <div>
   <form onSubmit={handleSubmit} >
-       <label htmlFor="">Name:<input
+       <TextField
+       label="Name" variant="outlined"
         type="text"
         name="name"
         pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -14,10 +18,10 @@ return(
         required
         value={name}
         onChange={handleName}
-      /></label>
-      <label htmlFor="">
-        Tel:
-        <input
+      />
+      
+        <TextField
+         label="Tel" variant="outlined"
       type="tel"
       name="number"
       pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
@@ -25,9 +29,10 @@ return(
       required
       value={number}
       onChange={handleNumber}
-    /></label>
-      <button  type="submit">Add contact</button>
+    />
+      <Button  style={{width: 100, color: "rgb(144, 202, 249)",}} variant="outlined"  type="submit">Add contact</Button>
         </form>
+        </div>
 )
 }
 // class SubmitContacts extends Component {

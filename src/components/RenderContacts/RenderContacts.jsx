@@ -1,5 +1,6 @@
 // import css from './RenderContacts.module.css'
 import PropTypes from 'prop-types';
+import Button  from '@mui/material/Button';
 
 const RenderContacts =({items, contactsDelete}) => {
   
@@ -9,8 +10,10 @@ const RenderContacts =({items, contactsDelete}) => {
     <ul> 
       {items.map(({id, name, number}) => (
       <li
-       key={id}>{name}:{number}
-       <button type="button" onClick={() => contactsDelete(id)}>Delete</button>
+       key={id}>
+        <span style={{fontSize: 20, marginRight: 10}}>{name}: {number}</span>
+        
+       <Button style={{width: 100, color: "rgb(144, 202, 249)",}} variant="outlined" type="button" onClick={() => contactsDelete(id)}>Delete</Button>
       </li>
      ))}
      </ul>
